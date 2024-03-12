@@ -1,0 +1,68 @@
+{
+  "name": "Purchased",
+  "plural": "Purchased",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "purchaseDate": {
+      "type": "string"
+    },
+    "approvedBy": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "totalQuantity": {
+      "type": "number"
+    },
+    "location": {
+      "type": "string"
+    },
+    "code": {
+      "type": "string"
+    },
+    "sivnumber": {
+      "type": "number"
+    },
+    "gmnumber": {
+      "type": "number"
+    },
+    "description": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "itemname": {
+      "type": "string"
+    },
+    "addition": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "inventory": {
+      "type": "belongsTo",
+      "model": "Invenotry",
+      "foreignKey": "inventoryId",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "customer": {
+      "type": "belongsTo",
+      "model": "Customer",
+      "foreignKey": "customorId",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,26 @@
+{
+  "name": "loopback-disable-method-mixin",
+  "version": "0.0.1",
+  "description": "A mixin to disable or expose a list of properties in a model",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/b3rew/loopback-disable-method-mixin.git"
+  },
+  "keywords": [
+    "loopback",
+    "strongloop",
+    "mixin",
+    "disable",
+    "properties",
+    "methods"
+  ],
+  "author": "b3rew <brkt13@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/b3rew/loopback-disable-method-mixin/issues"
+  },
+  "homepage": "https://github.com/b3rew/loopback-disable-method-mixin#readme",
+  "devDependencies": {}
+}

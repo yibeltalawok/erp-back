@@ -1,0 +1,38 @@
+{
+  "name": "defects",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name_english": {
+      "type": "string",
+      "required": true
+    },
+    "name_amharic": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "default": "MI"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "module": {
+      "type": "belongsTo",
+      "model": "module",
+      "foreignKey": "moduleId",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

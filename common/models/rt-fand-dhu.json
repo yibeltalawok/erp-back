@@ -1,0 +1,35 @@
+{
+  "name": "RTFandDHU",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "date": {
+      "type": "string"
+    },
+    "rft": {
+      "type": "number"
+    },
+    "dhu": {
+      "type": "number"
+    },
+    "totalGarmentChecked": {
+      "type": "number"
+    },
+    "ftp": {
+      "type": "number"
+    },
+    "totalDefect": {
+      "type": "number"
+    },
+    "line": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

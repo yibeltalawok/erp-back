@@ -1,0 +1,135 @@
+{
+  "name": "Issue",
+  "plural": "Issues",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mixins": {
+    "TimeStamp": true,
+    "SoftDelete": true,
+    "RowCount": true
+  },
+  "properties": {
+    "issueCode": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "state1": {
+      "type": "string"
+    },
+    "state2": {
+      "type": "string"
+    },
+    "state3": {
+      "type": "string"
+    },
+    "reason": {
+      "type": "string"
+    },
+    "issueDate": {
+      "type": "date"
+    },
+    "storeManaDate": {
+      "type": "date",
+      "default": null
+    },
+    "financeDate": {
+      "type": "date",
+      "default": null
+    },
+    "generalManadate": {
+      "type": "date",
+      "default": null
+    },
+    "storeDate": {
+      "type": "date",
+      "default": null
+    },
+    "items": {
+      "type": []
+    },
+    "storeManagerSignature": {
+      "type": "string"
+    },
+    "financeSignature": {
+      "type": "string"
+    },
+    "generalManagerSignature": {
+      "type": "string"
+    },
+    "storeSignature": {
+      "type": "string"
+    },
+    "issueSignature": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "inventory": {
+      "type": "belongsTo",
+      "model": "Invenotry",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "Customer": {
+      "type": "belongsTo",
+      "model": "Customer",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "storeManager": {
+      "type": "belongsTo",
+      "model": "UserAccount",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "finance": {
+      "type": "belongsTo",
+      "model": "UserAccount",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "generalManager": {
+      "type": "belongsTo",
+      "model": "UserAccount",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "stockKeeper": {
+      "type": "belongsTo",
+      "model": "UserAccount",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "issuedBy": {
+      "type": "belongsTo",
+      "model": "UserAccount",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

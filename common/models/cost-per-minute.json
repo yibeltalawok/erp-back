@@ -1,0 +1,38 @@
+{
+  "name": "CostPerMinute",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "date": {
+      "type": "string"
+    },
+    "costPerMonth": {
+      "type": "number"
+    },
+    "costPerDay": {
+      "type": "number"
+    },
+    "costPerHour": {
+      "type": "number"
+    },
+    "costPerMinute": {
+      "type": "number"
+    },
+    "workingDays": {
+      "type": "number"
+    },
+    "workingHours": {
+      "type": "number"
+    },
+    "minutesPerDay": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

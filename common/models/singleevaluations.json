@@ -1,0 +1,91 @@
+{
+  "name": "singleevaluations",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "size": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string"
+    },
+    "imethod": {
+      "type": "string"
+    },
+    "ilevel": {
+      "type": "string"
+    },
+    "lotquantity": {
+      "type": "number"
+    },
+    "aqllvel": {
+      "type": "string"
+    },
+    "linenum": {
+      "type": "string"
+    },
+    "samplesize": {
+      "type": "string"
+    },
+    "quantitychecked": {
+      "type": "number"
+    },
+    "minor": {
+      "type": "number"
+    },
+    "major": {
+      "type": "number"
+    },
+    "total": {
+      "type": "string"
+    },
+    "ftp":{
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "validations": [],
+  "relations": {
+    "OperationBulletins": {
+      "type": "belongsTo",
+      "model": "OperationBulletin",
+      "foreignKey": "OperationBulletinId",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "module": {
+      "type": "belongsTo",
+      "model": "module",
+      "foreignKey": "moduleId",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "defect": {
+      "type": "belongsTo",
+      "model": "defects",
+      "foreignKey": "defectId",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "ScannedOrderStatus": {
+      "type": "belongsTo",
+      "model": "ScannedOrderStatus",
+      "foreignKey": "scannedOrderStatusId",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

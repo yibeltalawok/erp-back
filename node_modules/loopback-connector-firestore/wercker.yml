@@ -1,0 +1,6 @@
+box: node:8.5.0
+
+build:
+  steps:
+    - npm-install
+    - npm-test

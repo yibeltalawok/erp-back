@@ -1,0 +1,37 @@
+{
+  "name": "Performance",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "mixins": {
+    "TimeStamp": true,
+    "SoftDelete": true,
+    "RowCount": true
+  },
+  "properties": {
+    "date": {
+      "type": "date"
+    },
+    "average": {
+      "type": "number"
+    },
+    "top": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "Employee": {
+      "type": "belongsTo",
+      "model": "Employee",
+      "foreignKey": "employeeId",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
